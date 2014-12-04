@@ -14,59 +14,47 @@ html
       section
         h1 Advanced Galleries in Distro
 
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-        h3.red We really <span class="shake shake-rotate shake-constant hover-stop">really</span> should
+      // Part 1 - Dennis Gallery Advanced: What? Why? How?
+      // Brief on background
+      // Attila
+      include ./part1.jade
 
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+      // Part 2 - Backbone, Require & me
+      // Brief tech intro
+      // Attila
+      include ./part2.jade
 
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+      // Part 3 - Features and functionality
+      // Detailed functionality overview
+      // Attila?
+      include ./part3.jade
 
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
+      // Part 4 - Internal structure
+      // Detailed structural overview
+      // Daniel
+      include ./part4.jade
 
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
+      // Part 5 - Working with Drupal - Flexibility and Extendability
+      // Detailed Drupaly things
+      // Attila
+      include ./part5.jade
 
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+      // Part 6 - Going responsive on any site
+      // The CSS bits
+      // Daniel
+      include ./part6.jade
 
+      // Part 7 - Results
+      // Some data if we can get hold of
+      // Attila
+      include ./part7.jade
+
+      // Part 8 - End
+      // Attila & Daniel
       section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
+        h2 Questions
         br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
         br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+        h3 (you may get answers)
 
     script(src='build/build.js')
