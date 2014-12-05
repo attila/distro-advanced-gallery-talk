@@ -155,9 +155,17 @@ article
 .emphatic .bespoke-slide
   background slide_background
 
-.backdrop-dark,
-.backdrop-dark .bespoke-slide
+.forced-dark,
+.forced-dark .bespoke-slide
   background #444
+
+.forced-black,
+.forced-black .bespoke-slide
+  background black
+
+.forced-white,
+.forced-white .bespoke-slide
+  background-color white
 
 .inverted,
 .inverted .bespoke-slide,
@@ -261,7 +269,14 @@ pre.small
 
 section.imgfull
   padding 0
+  img
+    height auto
 
 img
   max-width 100%
   height auto
+
+.str
+  text-decoration line-through
+  padding-right 7px
+  padding-left 7px

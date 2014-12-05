@@ -1,29 +1,31 @@
-section
+section.forced-white(data-bespoke-backdrop='forced-white')
+  h1 #3
   h1 Features and functionality
 
 section
-  h1 Modularity
+  h1.bullet Modularity
   br
   br
   br
   br
   br
-  h3 Decoupled modules
-  h3 Separation of concerns
+  h3.bullet Decoupled modules
+  h3.bullet Separation of concerns
 
 section
-  h1 Markup
+  h1.bullet Markup
   br
   br
   br
   br
   br
-  h4 Single page
-  h4 No AJAX
-  h4 &lt;noscript&gt;
-  h4 Indexable
+  h4.bullet Single page
+  h4.bullet No AJAX
+    span.bullet.shake.shake-slow.shake-constant  (!!!)
+  h4.bullet &lt;noscript&gt;
+  h4.bullet Indexable
 
-section.emphatic-text(data-bespoke-backdrop='empathic' style='background: url(./images/3-source.png) no-repeat center center; background-size: 100% auto')
+section.forced-white(data-bespoke-backdrop='forced-white' style='background: url(./images/3-source.png) no-repeat center center; background-size: 100% auto')
 
 section
   h1 List view
@@ -54,13 +56,13 @@ section
   h4 Same markup as list for images
   h4 Launched as overlay but has own shareable URL
 
-section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/3-sample.jpg) no-repeat center center; background-size: 100% auto')
+section.forced-dark(data-bespoke-backdrop='forced-dark' style='background: url(./images/3-sample.jpg) no-repeat center center; background-size: 100% auto')
 
-section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/3-sample-info.jpg) no-repeat center center; background-size: 100% auto')
+section.forced-dark(data-bespoke-backdrop='forced-dark' style='background: url(./images/3-sample-info.jpg) no-repeat center center; background-size: 100% auto')
 
-section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/3-sample-nav.jpg) no-repeat center center; background-size: 100% auto')
+section.forced-dark(data-bespoke-backdrop='forced-dark' style='background: url(./images/3-sample-nav.jpg) no-repeat center center; background-size: 100% auto')
 
-section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/3-sample-ads.jpg) no-repeat center center; background-size: 100% auto')
+section.forced-dark(data-bespoke-backdrop='forced-dark' style='background: url(./images/3-sample-ads.jpg) no-repeat center center; background-size: 100% auto')
 
 section
   h1 Modules
@@ -101,14 +103,19 @@ section
   h4.bullet Elements rendered by JS, not served by PHP
   h4.bullet Lazy loaded to handle large amount of images
 
+section.imgfull.forced-white(data-bespoke-backdrop='forced-white')
+  img(src='./images/4-thumbnails.gif')
+
 section
   h1 Full image
   br
   br
   br
-  br
   br.bullet
   h4.bullet Modal view of original image
+
+section.imgfull.forced-white(data-bespoke-backdrop='forced-white')
+  img(src='./images/4-fullscreen.gif' style='max-width:100%;height:auto;')
 
 section
   h1 Share buttons
@@ -120,16 +127,32 @@ section
   h4.bullet Next version 7.x uses RRSSB and Sharerich
 
 section
-  h3 GPT Ads
+  h2 GPT Ads (Google DFP)
+  br
+  h4 Refresh ad unit on every nth (configurable)
+  h4 Refresh ad unit on change after n secs (configurable)
+  br
+  br
+  h2 Vibrant Media image ads
+  br
   h4 Refresh ad unit on every nth (configurable)
   h4 Refresh ad unit on change after n secs (configurable)
 
-section
-  h3 Vibrant Media image ads
-  h4 Refresh ad unit on every nth (configurable)
-  h4 Refresh ad unit on change after n secs (configurable)
+section.imgfull.forced-white(data-bespoke-backdrop='forced-white')
+  img(src='images/4-configuration.png' style='max-width:100%;height:auto;')
+
+section.imgfull.forced-white(data-bespoke-backdrop='forced-white')
+  img(src='images/4-gptflow.gif' style='max-width:100%;height:auto;')
 
 section
-  h3 Tracking
-  h4 Pageviews
-  h4 Event tracking (configurable killswitch)
+  h2.bullet Tracking
+  br
+  br
+  h3.bullet We Track Anything™
+  h4.bullet Pageviews
+  h4.bullet Event tracking
+  h4.bullet Clicks/taps on navigation
+  h4.bullet Keyboard navigation
+  h4.bullet Switch to fullscreen
+  h4.bullet Close
+  h4.bullet ...you name it
