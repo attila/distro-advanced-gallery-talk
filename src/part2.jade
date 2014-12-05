@@ -18,9 +18,9 @@ section
   br
   h4 MV* or MVVM framework
   h4 One of the first of its kind
-  h4 Not the most popular by now, still widely known
+  h4 Not the most popular by now, still widely used
   h4 Depends on Underscore.js and jQuery
-  h4 The smallest
+  h4 The smallest file size among the popular ones
 
 section
   h2 Backbone.js
@@ -28,11 +28,12 @@ section
   br
   br
   br
-  h4 Flexible enough, we don't need all the components
+  h4 Most flexible, selectable components
   h4 Store components not bound to a DOM element
   h4 Model and Collections work hassle-free
   h4 Event handling is mature
-  h4 Smallest file size among the popular ones
+  h4 Syntax is close to native OO JS
+  h4 Documentation is very good
 
 section
   h2 Backbone.js
@@ -40,31 +41,36 @@ section
   br
   br
   br
-  h4 Router
-  h4 Event emitter
-  h4 Models, Collections (bootstrapped from back-end)
-  h4 Easy templating via Underscore.js
-  h5 (yes, we prefer JS templating over Drupal here)
+  ul
+  h4.bullet Router (no pushState for SEO purposes)
+  h4.bullet Event emitter
+  h4.bullet Models, Collections (bootstrapped from back-end)
+  h4.bullet Easy templating via Underscore.js
+  h5.bullet (yes, we prefer JS templating over Drupal here)
 
 section
   h2 Require.js
   br
   br
   br
-  h3 Very Quick Overview™
   br
-  h4
+  br
+  h4.bullet Very Quick Overview™
+  h4.bullet Why we picked it → because it's in the distro
+  h4.bullet What we use it for → module spec, optimisation, async
+  h4.bullet
     a(href='http://attila.github.io/distro-requirejs-talk/') http://attila.github.io/distro-requirejs-talk/
-  h4 Why we picked it? (because it's in the distro)
 
 section
   h2 Custom additions
   br
   br
   br
-  h3 View manager
-  h4 To set Base Views → DRY
+  h3.bullet View manager
+  h4.bullet "Base" Views&nbsp;
+    span.bullet → DRY
   br
   br
-  h3 Mediator
-  h4 Communication → Globally, across modules
+  h3.bullet Mediator/PubSub module
+  h4.bullet design pattern&nbsp;
+    span.bullet → Communicate across modules
