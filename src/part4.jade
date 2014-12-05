@@ -3,14 +3,47 @@ section
 
 section
   h3 Models
+  ul
+    li
+    li GalleryCount
+    li GalleryItem
+
+section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/4-gallery-navigation.jpg) no-repeat center center; background-size: 100% auto')
 
 section
   h3 Views
   p ...and viewManager
+  p
+  ul
+    li
+    li base - the mother of all
+    li infoview
+    li maingallery
+    li maingallerylist
+    li navigationview
+    li origimgview
+    li thumbnailsview
+
+section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/4-origimgview.jpg) no-repeat center center; background-size: 100% auto')
 
 section
   h3 Templates
+  ul
+    li
+    li info
+    li navigation
+    li orig_img
+    li thumbnails
+
+section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/4-origimgview-initiation.png) no-repeat center center; background-size: 100% auto')
+section.emphatic-text(data-bespoke-backdrop='backdrop-dark' style='background: url(./images/4-origimgview-template.png) no-repeat center center; background-size: 100% auto')
 
 section
   h3 Mediator for module interactions
   p Code examples
+  code(style='text-align: left').
+    mediator.subscribe('gallery:init', this.setActive);
+    mediator.subscribe('gallery:changeStart', this.setActive);
+    $(document).on('click', '.thumbnails img', function(e) {
+    &nbsp;&nbsp;mediator.publish('gallery:thumbnailClicked', parseInt(e.target.parentElement.getAttribute('href').substring(1)));
+    });
